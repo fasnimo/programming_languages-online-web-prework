@@ -2,8 +2,9 @@ require 'pry'
 def reformat_languages(languages)
   new_hash = {}
   languages.each do |oo_functional, languages_hash|
-    binding.pry
-    value.each do |k, v|
+   
+    languages_hash.each do |k, v|
+       binding.pry
       puts k 
       puts v 
     end 
