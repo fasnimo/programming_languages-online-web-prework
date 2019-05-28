@@ -6,9 +6,9 @@ def reformat_languages(languages)
     languages_hash.each do |language, hash|
        
       hash.each do |type, string|
-     if new_hash[language] == nil
-       new_hash[language] = {}
-      end 
+     
+       new_hash[language] ||= {}
+      
        new_hash[language][type] ||= string
        new_hash[language][:style] ||= []
        new_hash[language][:style] << oo_functional
