@@ -4,9 +4,11 @@ def reformat_languages(languages)
   languages.each do |oo_functional, languages_hash|
    
     languages_hash.each do |language, hash|
-       binding.pry
-      puts k
-      puts v 
+       
+      hash.each do |type, string|
+      binding.pry  
+      end 
+       
     end 
   end
 languages
